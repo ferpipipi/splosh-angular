@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SeccionComponent } from './seccion/seccion.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
         AppRoutingModule,
         RouterModule
     ],
-    providers: [],
+    providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

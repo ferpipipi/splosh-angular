@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background-image: url(/assets/img/fondo2.jpg);
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
 .conteiner-login{
     max-width: 10%;
     min-width: 25%;

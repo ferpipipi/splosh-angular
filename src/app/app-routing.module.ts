@@ -5,10 +5,10 @@ import { LoginComponent } from './login/login.component';  // Importa tu compone
 import { SeccionComponent } from './seccion/seccion.component';  // Importa tu componente Sección
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'seccion', component: SeccionComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },  // Ruta por defecto
 ];
 
 @NgModule({
